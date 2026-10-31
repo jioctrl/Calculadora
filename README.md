@@ -2,6 +2,7 @@
 Projeto desenvolvido em Java para demonstrar operações matemáticas básicas.
 
 ## Estruturação
+```text
 Calculadora/
 projeto_calculadora/
 ├── src/
@@ -19,6 +20,7 @@ projeto_calculadora/
 │   └── script-files/
 │  
 └── README.md
+```
 
 ## Demonstração
 

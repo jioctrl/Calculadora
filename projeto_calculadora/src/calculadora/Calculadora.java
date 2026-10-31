@@ -1,26 +1,27 @@
 package calculadora;
 
 public class Calculadora {
-	public int resultado = 0;
+	public int r = 0;
 	
-	public int calculadora(int a, int b, int c, String op) {
+	public int calc(int a, int b, String op) {
 		if (op.equals("+")) {
-			resultado = a + b;
+			r = a + b;
 		 }else if (op.equals("-")) {
-			resultado = a - b;
+			r = a - b;
 		} else if (op.equals("*")) {
-			resultado = a * b;
+			r = a * b;
 		} else if (op.equals("/")) {
-			if(b == 0) {
-				System.out.println("Divisão por 0, operação irregular.");
-				resultado = 0;
+			if(b != 0) {
+				r = a / b;
 			}else {
-			resultado = a / b;
+				System.out.println("Divisão por 0, operação irregular.");
+				r = 0;
 			}
 		} else {
 			System.out.println("Operação inválida.");
 		}
 		
-		return resultado;
+		System.out.println("Resultado: " + r);
+		return r;
 	}
 }
